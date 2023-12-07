@@ -31,7 +31,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 )
 
 st.title('デジタル推進タスク')
-st.title('_Streamlitでアプリ作ってみた_  :blue[アプリ] :sunglasses:')
+st.title('_Streamlitでアプリ作ってみた_  :blue[アプリ] :')
 
 
 option = st.selectbox(
@@ -44,7 +44,6 @@ st.write('You selected:', option)
 st.image('コラム.PNG', caption='Sunrise by the mountains')
 
 st.balloons()
-
 
 
 if uploaded_file :
@@ -76,7 +75,9 @@ if uploaded_file :
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["デジタル推進タスクAIチーム作成のチャットボットです！アップロードしたこちらのファイルの内容をもとに回答します" + uploaded_file.name ]
+        st.session_state['generated'] = ["デジタル推進タスクAIチーム作成のチャットボットです！
+        アップロードしたこちらのファイルの内容をもとに回答します。"
+        + uploaded_file.name ]
 
     if 'past' not in st.session_state:
         st.session_state['past'] = ["お世話になっております。"]
