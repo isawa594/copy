@@ -104,9 +104,3 @@ if uploaded_file :
                 message(st.session_state["past"][i], is_user=True, key=str(i) + '_user', avatar_style="image0 (3).jpeg")
                 message(st.session_state["generated"][i], key=str(i), avatar_style="thumbs")
 
-[theme]
-primaryColor="#F63366"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
