@@ -16,7 +16,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 st.set_page_config(
     primaryColor="#F63366"
-    backgroundColor="#FFFFFF"
+    backgroundColor="#F63366F"
     secondaryBackgroundColor="#F0F2F6"
     textColor="#262730"
     font="sans serif"
