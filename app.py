@@ -12,13 +12,10 @@ from langchain.vectorstores import FAISS
 import tempfile
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-streamlit config show
-[theme]
-primaryColor="#F63366"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
+st.set_option('theme.primaryColor', '#F63366')
+st.set_option('theme.backgroundColor', '#FFFFFF')
+
+
 
 
 user_api_key = st.sidebar.text_input(
