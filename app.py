@@ -47,9 +47,9 @@ st.balloons()
 
 
 [theme]
-primaryColor="#F63366"
+primaryColor="#ff1493"
 backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
+secondaryBackgroundColor="#00bfff"
 textColor="#262730"
 font="sans serif"
 
