@@ -15,7 +15,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 user_api_key = st.sidebar.text_input(
-    label="OpenAI API key",
+    label="API キー",
     placeholder="APIキーを入力してください",
     type="password")
 
