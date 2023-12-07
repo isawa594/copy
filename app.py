@@ -33,7 +33,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 
 
-st.image('タイトル.png', caption='プロトタイプとして作成・公開しているため、セキュリティ上、現時点では機密情報にあたる自社データ・個人情報はアップロードできません')
+st.image('タイトル.png', caption='プロトタイプとして作成・公開しているため、  \nセキュリティ上、現時点では機密情報にあたる自社データ・個人情報はアップロードできません')
 
 st.balloons()
 
