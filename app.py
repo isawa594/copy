@@ -11,6 +11,14 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import FAISS
 import tempfile
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from streamlit_extras.colored_header import colored_header
+
+def example():
+    colored_header(
+        label="My New Pretty Colored Header",
+        description="This is a description",
+        color_name="violet-70",
+    )
 
 
 
