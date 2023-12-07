@@ -30,7 +30,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 )
 
-st.title('This is a title')
+st.title('デジタル推進タスク')
 st.title('_Streamlit_ is :blue[cool] :sunglasses:')
 
 
