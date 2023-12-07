@@ -38,8 +38,11 @@ option = st.selectbox(
 st.write('You selected:', option)
 
 
-import streamlit as st
 st.image('コラム.PNG', caption='Sunrise by the mountains')
+
+st.balloons()
+
+
 
 if uploaded_file :
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
