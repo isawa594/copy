@@ -19,7 +19,7 @@ user_api_key = st.sidebar.text_input(
     placeholder="APIキーを入力してください",
     type="password")
 
-uploaded_file = st.sidebar.file_uploader("アップロード", type="pdf")
+uploaded_file = st.sidebar.file_uploader("アップロード（社外秘情報のPDFアップロードはお控えください）", type="pdf")
 
 os.environ['OPENAI_API_KEY'] = user_api_key
 
