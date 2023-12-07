@@ -80,7 +80,7 @@ if uploaded_file :
         st.session_state['past'] = ["作成したアプリのご紹介です！"]
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["デジタル推進タスクAIチーム作成のチャットボットです！アップロードしたこちらのファイルの内容をもとに回答します。+ uploaded_file.name ]
+        st.session_state['generated'] = ["デジタル推進タスクAIチーム作成のチャットボットです！アップロードしたこちらのファイルの内容をもとに回答します。"+ uploaded_file.name ]
         
 
 
