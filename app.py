@@ -34,6 +34,8 @@ st.title('デジタル推進タスク')
 st.title(':red[Streamlit]でアプリ作ってみた')
 
 
+st.image('タイトル.png', caption='Sunrise by the mountains')
+
 option = st.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
