@@ -31,7 +31,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 )
 
 st.title('デジタル推進タスク')
-st.title(':red[Streamlit]:でアプリ作ってみた')
+st.title(':red[Streamlit]でアプリ作ってみた')
 
 
 option = st.selectbox(
