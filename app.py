@@ -46,7 +46,7 @@ st.image('コラム.PNG', caption='Sunrise by the mountains')
 st.balloons()
 
 
-[theme]
+.streamlit/config.toml
 primaryColor="#ff1493"
 backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#00bfff"
