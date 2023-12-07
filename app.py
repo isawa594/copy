@@ -42,6 +42,12 @@ st.image('コラム.PNG', caption='Sunrise by the mountains')
 
 st.balloons()
 
+[theme]
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
 
 
 if uploaded_file :
