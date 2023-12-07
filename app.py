@@ -46,13 +46,6 @@ st.image('コラム.PNG', caption='Sunrise by the mountains')
 st.balloons()
 
 
-.streamlit/config.toml
-primaryColor="#ff1493"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#00bfff"
-textColor="#262730"
-font="sans serif"
-
 
 if uploaded_file :
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
