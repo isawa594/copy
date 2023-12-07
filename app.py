@@ -30,8 +30,8 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 )
 
-st.title('デジタル推進タスク')
-st.title(':red[Streamlit]でアプリ作ってみた')
+st.title('デジ推し！フェス2024')
+st.title(':#ff61c5[Streamlit]でアプリ作ってみた')
 
 
 st.image('タイトル.png', caption='Sunrise by the mountains')
