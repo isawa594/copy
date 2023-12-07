@@ -1,13 +1,5 @@
 # 以下を「app.py」に書き込み
 
-[theme]
-primaryColor="#F63366"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
-
-
 import streamlit as st
 import openai
 import os
@@ -20,7 +12,12 @@ from langchain.vectorstores import FAISS
 import tempfile
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-
+[theme]
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
 
 
 user_api_key = st.sidebar.text_input(
