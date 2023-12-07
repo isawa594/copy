@@ -14,22 +14,13 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 
-# テーマの変更
-st.markdown(
-    """
-    <style>
-        :root {
-            --primary-color: #F63366;
-            --background-color: #FFFFFF;
-            --secondary-background-color: #F0F2F6;
-            --text-color: #262730;
-            --font: sans-serif;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
+st.set_page_config(
+    primaryColor="#F63366"
+    backgroundColor="#FFFFFF"
+    secondaryBackgroundColor="#F0F2F6"
+    textColor="#262730"
+    font="sans serif"
 )
-
 
 
 user_api_key = st.sidebar.text_input(
