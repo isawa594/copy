@@ -12,9 +12,23 @@ from langchain.vectorstores import FAISS
 import tempfile
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-st.set_option('theme.primaryColor', '#F63366')
-st.set_option('theme.backgroundColor', '#FFFFFF')
 
+
+# テーマの変更
+st.markdown(
+    """
+    <style>
+        :root {
+            --primary-color: #F63366;
+            --background-color: #FFFFFF;
+            --secondary-background-color: #F0F2F6;
+            --text-color: #262730;
+            --font: sans-serif;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 
