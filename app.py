@@ -13,14 +13,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 
-[theme]
-primaryColor="#F63366"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
-
-
 
 user_api_key = st.sidebar.text_input(
     label="OpenAI API key",
