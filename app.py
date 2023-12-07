@@ -75,8 +75,7 @@ if uploaded_file :
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["デジタル推進タスクAIチーム作成のチャットボットです！
-        アップロードしたこちらのファイルの内容をもとに回答します。"
+        st.session_state['generated'] = ["デジタル推進タスクAIチーム作成のチャットボットです！ アップロードしたこちらのファイルの内容をもとに回答します。"
         + uploaded_file.name ]
 
     if 'past' not in st.session_state:
