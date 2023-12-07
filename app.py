@@ -80,8 +80,7 @@ if uploaded_file :
         st.session_state['generated'] = ["デジタル推進タスクAIチーム作成のチャットボットです！ アップロードしたこちらのファイルの内容をもとに回答します。"
         + uploaded_file.name ]
 
-    if 'past' not in st.session_state:
-        st.session_state['past'] = ["お世話になっております。"]
+
 
     # This container will be used to display the chat history.
     response_container = st.container()
