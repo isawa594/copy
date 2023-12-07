@@ -14,15 +14,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 
-
-
-
-st.set_page_config(
-    primaryColor="#F63366"
-   
-)
-
-
 user_api_key = st.sidebar.text_input(
     label="OpenAI API key",
     placeholder="APIキーを入力してください",
