@@ -27,6 +27,19 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 )
 
+st.title('This is a title')
+st.title('_Streamlit_ is :blue[cool] :sunglasses:')
+
+
+option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
+st.write('You selected:', option)
+
+
+st.image('pic.jpg', caption='Sunrise by the mountains')
+
 if uploaded_file :
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
         tmp_file.write(uploaded_file.getvalue())
