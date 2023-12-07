@@ -30,7 +30,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 )
 
-st.title('デジ推し！フェス2024')
+
 
 
 st.image('タイトル.png', caption='Sunrise by the mountains')
