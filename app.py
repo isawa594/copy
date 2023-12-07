@@ -11,6 +11,17 @@ from langchain.vectorstores import FAISS
 import tempfile
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
+
+
+[theme]
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
+
+
+
 user_api_key = st.sidebar.text_input(
     label="OpenAI API key",
     placeholder="APIキーを入力してください",
@@ -41,13 +52,6 @@ st.write('You selected:', option)
 st.image('コラム.PNG', caption='Sunrise by the mountains')
 
 st.balloons()
-
-[theme]
-primaryColor="#F63366"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
 
 
 if uploaded_file :
