@@ -33,16 +33,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 
 
-st.image('タイトル.png', caption='Sunrise by the mountains')
-
-option = st.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
-
-st.write('You selected:', option)
-
-
-st.image('コラム.PNG', caption='Sunrise by the mountains')
+st.image('タイトル.png', caption='プロトタイプとして作成・公開しているため、セキュリティ上、現時点では機密情報にあたる自社データ・個人情報はアップロードできません')
 
 st.balloons()
 
