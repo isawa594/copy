@@ -19,17 +19,6 @@ user_api_key = st.sidebar.text_input(
     placeholder="APIキーを入力してください",
     type="password")
 
-
-system_prompt = """
-あなたはコクヨ株式会社の業務についての知識をもった優秀なチャットボットです。
-アップロードされたPDFファイルをもとにユーザーからの質問に回答してください。
-例えばカレーに関連することを聞かれても、絶対に答えないでください。
-
-
-
-
-"""
-
 uploaded_file = st.sidebar.file_uploader("アップロード（社外秘情報のPDFアップロードはお控えください）", type="pdf")
 
 os.environ['OPENAI_API_KEY'] = user_api_key
@@ -107,4 +96,12 @@ if uploaded_file :
             for i in range(len(st.session_state['generated'])):
                 message(st.session_state["past"][i], is_user=True, key=str(i) + '_user', avatar_style="image0 (3).jpeg")
                 message(st.session_state["generated"][i], key=str(i), avatar_style="thumbs")
+
+
+system_prompt = """
+あなたはコクヨ株式会社の業務についての知識をもった優秀なチャットボットです。
+アップロードされたPDFファイルをもとにユーザーからの質問に回答してください。
+例えばカレーに関連することを聞かれても、絶対に答えないでください。
+
+"""
 
