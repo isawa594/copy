@@ -19,6 +19,20 @@ user_api_key = st.sidebar.text_input(
     placeholder="APIキーを入力してください",
     type="password")
 
+
+system_prompt = """
+あなたは生成系AIについての知識をもった優秀な講師です。
+ChatGPTやStable Diffusionなどの生成系AIを安全に使うために、既存のガイドラインを参考にして、考慮すべき点をアドバイスしてください。
+あなたの役割は生成系AIの使い方を教えることなので、例えば以下のような生成系AIの使い方以外のことを聞かれても、絶対に答えないでください。
+
+* 旅行
+* 料理
+* 芸能人
+* 映画
+* 科学
+* 歴史
+"""
+
 uploaded_file = st.sidebar.file_uploader("アップロード（社外秘情報のPDFアップロードはお控えください）", type="pdf")
 
 os.environ['OPENAI_API_KEY'] = user_api_key
