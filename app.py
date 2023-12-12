@@ -37,6 +37,9 @@ st.image('タイトル.png', caption='プロトタイプとして作成・公開
 
 st.balloons()
 
+system_prompt = """
+あなたはコクヨ株式会社の業務についての知識をもった優秀なチャットボットです。
+アップロードされたPDFファイルを優先的な情報源として、ユーザーからの質問に回答してください。
 
 if uploaded_file :
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
@@ -98,9 +101,7 @@ if uploaded_file :
                 message(st.session_state["generated"][i], key=str(i), avatar_style="thumbs")
 
 
-system_prompt = """
-あなたはコクヨ株式会社の業務についての知識をもった優秀なチャットボットです。
-アップロードされたPDFファイルを優先的な情報源として、ユーザーからの質問に回答してください。
+
 
 """
 
