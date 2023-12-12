@@ -53,10 +53,6 @@ if uploaded_file :
     chain = ConversationalRetrievalChain.from_llm(llm = ChatOpenAI(temperature=0.0,model_name='gpt-3.5-turbo-16k'),
                                                                       retriever=vectors.as_retriever())
 
-    system_prompt = """
-あなたはコクヨ株式会社の業務についての知識をもった優秀なチャットボットです。
-アップロードされたPDFファイルを優先的な情報源として、ユーザーからの質問に回答してください。
-
 
 
     # This function takes a query as input and returns a response from the ChatOpenAI model.
